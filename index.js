@@ -4,8 +4,8 @@ const port =8080;
 const http = require("http");
 const fs = require('fs')
 const path = require("path");
-const express = require("express")
-const bodyParser = require('body-parser');
+const express = require("/home/ganesh/mynodejsfolder/node_modules/express")
+const bodyParser = require('/home/ganesh/mynodejsfolder/node_modules/body-parser');
 const app = express()
 var filecontent2="  Heellloooo Worldd...."
 const server = http.createServer(app)
@@ -35,7 +35,7 @@ exec(mycmd, (error, stdout, stderr) => {
 }
 
 app.get('/',(req,res) => {
-    res.sendFile(path.join(__dirname,'./new1.html'));
+    res.sendFile(path.join(__dirname,'./home.html'));
    // console.log(req)
 //console.log(res)
 })
